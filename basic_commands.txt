@@ -1,0 +1,9 @@
+show databases --> shows all the databases in your connection;
+use database <name> --> change the working database to specified name;
+drop database <name> --> deletes the database;
+create table <name> (<column name> <data type> <optional properties>,...<another column with same syntax>,primary key (<column name>), foreign key <table name>(<column name of that table>))  ---> creates a table into working database with the specified columns;
+show table <table name> --> shows detail of the specified table in the working directory;
+insert into <table name> (<column name>) values (<first value>), .... --> insert specified data into the table;
+select * from <table name> --> shows all column data in the table;
+select <column name> from <table name> --> shows data of this column from this table;
+
