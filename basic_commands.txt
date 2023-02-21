@@ -1,9 +1,31 @@
 show databases --> shows all the databases in your connection;
+
 use database <name> --> change the working database to specified name;
+
 drop database <name> --> deletes the database;
+
 create table <name> (<column name> <data type> <optional properties>,...<another column with same syntax>,primary key (<column name>), foreign key <table name>(<column name of that table>))  ---> creates a table into working database with the specified columns;
-show table <table name> --> shows detail of the specified table in the working directory;
+
+show columns from <table name> --> shows detail of the specified table in the working directory;
+                                            or
+describe <table name> ---> same work;
+
 insert into <table name> (<column name>) values (<first value>), .... --> insert specified data into the table;
+
 select * from <table name> --> shows all column data in the table;
+
 select <column name> from <table name> --> shows data of this column from this table;
 
+//alias -> select <column name> as <anything> from <table name> --> shows data but use <anything> as cloumn name instead of <column name>;
+
+order by <cloumn name> --> use with select --> change the order of data in the table --> default ascending;
+
+order by <cloumn name> desc --> same as above just with descending order;
+
+distinct --> returns only distinct data;
+
+update <table name> set <cloumn name> = <value> where <cloumn name> = <value> ---> it will update the row of <cloumn name>;
+
+where --> use to filter data;
+
+like --> also use to filter data;
